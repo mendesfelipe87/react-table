@@ -27,6 +27,9 @@
 
 <br />
 <br />
+## Warning
+the correct path for user react-table is the link below
+https://github.com/react-tools/react-table
 
 ## Features
 
