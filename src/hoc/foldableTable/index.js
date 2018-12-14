@@ -13,11 +13,7 @@ const defaultFoldIconComponent = ({ collapsed }) => {
 
 const defaultFoldButtonComponent = ({ header, collapsed, icon, onClick }) => {
   const style = {
-    marginLeft: '0px',
-    marginTop: '-5px',
-    marginBottom: '-8px',
-    float: 'left',
-    cursor: 'pointer',
+    zIndex: 999
   }
 
   return (
