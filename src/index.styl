@@ -64,6 +64,10 @@ input-select-style()
       border-right: 1px solid alpha(black, .05)
       transition box-shadow .3s $easeOutBack
       box-shadow:inset 0 0 0 0 transparent
+      white-space: pre-wrap
+      white-space: -moz-pre-wrap
+      white-space: -pre-wrap
+      white-space: -o-pre-wrap
       &.-sort-asc
         box-shadow:inset 0 3px 0 0 alpha(black, .6)
       &.-sort-desc
@@ -85,6 +89,21 @@ input-select-style()
       width: 100%
       overflow: hidden
       text-overflow: ellipsis
+      div
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+
+    .rt-header-content
+      width: 100%
+      overflow: hidden
+      text-overflow: ellipsis
+      div
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
 
     .rt-header-pivot
       border-right-color: #f7f7f7
