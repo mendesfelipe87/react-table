@@ -317,7 +317,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       ) : null
 
       const isSortable = _.getFirstDefined(column.sortable, sortable, false)
-
+      const classResizable = isResizable ? 'rt-resizable-header-content' : 'rt-header-content'
       return (
         <ThComponent
           key={`${i}-${column.id}`}
@@ -340,7 +340,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           }}
           {...rest}
         >
-          <div className={classnames(isResizable && 'rt-resizable-header-content')}>
+          <div className={classnames(classResizable)}>
             {_.normalizeComponent(column.Header, {
               data: sortedData,
               column,
